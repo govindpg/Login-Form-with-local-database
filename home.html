@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container  d-flex justify-content-around align-items-center cc">
+        <div class="row gf rounded-3">
+            <div class="col-12 ">
+                <div class="conatiner">
+                    <h2 style="text-align: center;">Welcome <span id="us">User</span></h2><br />
+                    <p class="text-center">The best market place for used items </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus eius non quaerat
+                        distinctio a, laborum dolores! Excepturi iure tenetur obcaecati, cupiditate ab earum hic vero.
+                        Reiciendis atque corporis consequatur quam fugit autem necessitatibus voluptatibus error?
+                        Itaque, explicabo facere! Tempore amet minima magnam, quis reiciendis aspernatur molestiae
+                        corrupti, saepe, assumenda quas harum corporis cum voluptates quibusdam sint officia nulla ad.
+                        Modi labore fugit obcaecati sunt natus earum, aliquam alias explicabo, quibusdam reiciendis
+                        cupiditate veritatis rerum ab voluptates neque! Suscipit quo quos praesentium delectus debitis
+                        aut minus quibusdam placeat, doloribus exercitationem dicta enim cumque architecto, unde velit
+                        tenetur adipisci nisi aliquam quae earum iusto eaque temporibus. Recusandae saepe consectetur
+                        deleniti iusto cumque in est pariatur quae amet ut odit, officia odio quisquam eveniet officiis
+                        deserunt voluptatum. Tempora minus perspiciatis deserunt officia labore provident enim itaque
+                        nemo aut vero temporibus quae atque et ea quasi est magni, sunt nulla non quis ipsam id! Ullam
+                        temporibus ipsa fuga, modi quos sed! Aperiam ex explicabo natus iure placeat suscipit doloribus
+                        vitae veniam est, consequuntur minus vero consectetur aspernatur nemo ab dolorem recusandae
+                        libero assumenda quibusdam, non facere quasi cum ipsa. Quidem ratione libero fuga! Magni maxime
+                        dignissimos sapiente consequuntur, ipsum non quidem! Aperiam, tempora!</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                                    <button onclick="leave()" class="text-light  rounded  bg-primary" type="button">Logout</button>
+
+
+                </div>
+            </div>
+          
+    </div>
+
+</body>
+<script >
+    let userm=localStorage.getItem("user")
+    us.innerHTML=userm
+     function leave(){
+        alert("logout sucessfull")
+        window.location=("login_main.html")
+     }
+</script>
+
+</html>
