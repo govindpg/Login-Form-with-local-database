@@ -33,11 +33,11 @@
                         deserunt voluptatum. Tempora minus perspiciatis deserunt officia labore provident enim itaque
                         nemo aut vero temporibus quae atque et ea quasi est magni, sunt nulla non quis ipsam id! Ullam
                         temporibus ipsa fuga, modi quos sed! Aperiam ex explicabo natus iure placeat suscipit doloribus
-                        vitae veniam est, consequuntur minus vero consectetur aspernatur nemo ab dolorem recusandae
+                        vitae veniam est, con sequuntur minus vero consectetur aspernatur nemo ab dolorem recusandae
                         libero assumenda quibusdam, non facere quasi cum ipsa. Quidem ratione libero fuga! Magni maxime
                         dignissimos sapiente consequuntur, ipsum non quidem! Aperiam, tempora!</p>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-4 mb-4">
                                     <button onclick="leave()" class="text-light  rounded  bg-primary" type="button">Logout</button>
 
 
@@ -49,9 +49,17 @@
 </body>
 <script >
     let userm=localStorage.getItem("user")
-    us.innerHTML=userm
+    if(!userm){
+        alert("plese log in")
+        window.location="login_main.html"
+    }else{
+        us.innerHTML=userm
+    }
+
+
      function leave(){
         alert("logout sucessfull")
+        localStorage.removeItem("user")
         window.location=("login_main.html")
      }
 </script>
